@@ -11,10 +11,9 @@ File Organizer is a Python script that helps you organize your files into differ
 
 4. Run the script using the following command:
 
-python script.py [directory] [options]
+python organizer.py [directory] [options]
 
 
-- Replace `script.py` with the actual name of your Python script file.
 
 - Replace `[directory]` with the path of the directory you want to organize. If not provided, the current directory will be used.
 
@@ -30,33 +29,15 @@ python script.py [directory] [options]
 
 **Note:** Make sure to have the necessary dependencies installed. You can check the required dependencies in the script and install them using `pip`.
 
-## Script Details
-
-The Python script is divided into different sections:
-
-- **Imports:** The necessary modules and dependencies are imported at the beginning of the script.
-
-- **Main Function:** The main function contains the core logic of the script. It performs the following steps:
-
-- Parses the command line arguments to determine the directory and organization mode.
-
-- Checks the validity of the specified directory.
-
-- Creates organizer buckets (folders) for different file types within the specified directory.
-
-- Calls the `organize` function to organize the files in the directory and its subdirectories.
-
-- Deletes any empty folders.
-
-- Calculates and displays the execution time.
-
-- **makeBuckets Function:** This function creates organizer buckets (folders) for different file types within a specified directory.
-
-- **organize Function:** This function organizes the files in a directory based on their types and moves them into the corresponding organizer buckets. It also handles subdirectories based on the specified organization mode.
-
-- **File Type Checking Functions:** These functions check the file type based on file headers and extensions. They are used by the `organize` function to determine the appropriate bucket for each file.
-
-**Note:** Please make sure to replace `script.py` with the actual name of your Python script file in the usage instructions.
+## Features
+- ### Flexible Organization:
+Choose from different organization modes, including ignoring subdirectories, fully sorting subdirectories, or quickly sorting subdirectories.
+- ### Duplicate Removal:
+Remove duplicate files within a directory to ensure a clean and organized file structure.
+- ### Empty Folder Removal:
+Automatically delete any empty folders created during the organization process.
+- ### Customizable:
+Easily extend the script by adding more file formats or modifying existing ones.
 
 For any errors or issues, refer to the error messages displayed by the script.
 
